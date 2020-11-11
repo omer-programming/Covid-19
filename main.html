@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <title>Covid-19</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="description" content="Some Useful information about corona virus">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel= "stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <script src="j.s/main.js"></script>
+
+<script>
+
+    var images = [
+        "image_Covid-19/covid19-1.png",
+        "image_Covid-19/covid19-2.png",
+        "image_Covid-19/covid19-3.png"
+    ]    
+
+    var i = 0;
+
+    function changeimg(){
+        document.getElementById("slideImage").src = images[i];
+        if (i < (images.length -1)){
+            i++
+        }else{
+            i = 0; 
+        } 
+    }
+
+    setInterval(changeimg , 2000);
+    
+    </script>
+
+</head> 
+    
+<body>
+
+    <div class="grid-container">
+
+        <div class="header">
+
+            <div class="slideShow-Container1">
+
+                <img src="image_Covid-19/covid19-1.png" alt="Covid-19 1" id="slideImage">
+            
+<!--            <div class="text" style="color: black;">Corona-Virus (<span style="color: red">Covid-19</span>)</div>-->
+
+            </div> 
+
+    <!--
+    <div class="slideShow-Container">
+
+    <div class="mySlides3">
+    <div class="numbertext" style="width: 100%">1 / 3</div>
+    <img src="image_Covid-19/covid19-1.jpg">
+    <div class="text">Corona-Virus (Covid-19)</div>
+    </div>
+
+    <div class="mySlides3">
+    <div class="numbertext" style="width: 100%">2 / 3</div>
+    <img src="image_Covid-19/covid19-2.jpg">
+    <div class="text">Corona-Virus (Covid-19)</div>
+    </div>
+
+    <div class="mySlides3">
+    <div class="numbertext" style="width: 100%">3 / 3</div>
+    <img src="image_Covid-19/covid19-3.webp">
+    <div class="text">Corona-Virus (Covid-19)</div>
+    </div>
+
+    </div>
+
+    <div style="text-align: center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    </div>
+
+    -->
+        </div><!-- header closing-->
+
+        <div class="navBar">
+            <a href="Home.html">Home</a>
+            <a href="main.html" onclick="welcometo()">Main</a>
+            <a href="uae.html">Goverment</a>
+            <a href="syntoms.html">Symptoms</a>
+            <a href="about_me.html">About Me</a>
+        </div><!-- navbar closing-->
+
+        <div class="left">      
+
+            <h2 onclick="alertMessage()"><span style='color:red'>Covid 19</span> Latest Number and Cases &#128290;</h2>
+            <!--heading along with span attribute-->
+
+            <h3>Latest numbers &#128290;</h3>
+            <!--heading-->
+
+            <p>Situation Report #89 Data as reported by national authorities by 10:00 CET 18 April 2020.</p>
+            <!--paragraph-->
+
+
+            <h3>Globally</h3><!--virus cases globally-->
+            <!--headings-->
+            <p>Corona Virus Cases <strong>: </strong><a href='33,904,788'>33,904,788</a><br>
+               Deaths <strong>: </strong><a href="1,013,742">1,013,742</a><br>
+               Recovered <strong>: </strong><a href="25,194,115">25,194,115</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>European Region</h3><!--virus cases in european region-->
+            <!--heading-->
+            <p><a href='1086889'>1086889</a> Confirmed ( <a href='36018'>36018</a> )<br>
+            <a href='97201'> 97201</a> Deaths ( <a href='3721'>3721</a> )</p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Region of the Americas</h3><!--virus cases in region of americas-->
+            <!--heading-->
+            <p><a href='784272'>784272</a> Confirmed ( <a href='40665'>40665</a> )<br>
+            <a href='35742'> 35742</a> Deaths ( <a href='2714'>2714</a> )</p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Western Pacific Region</h3><!--virus cases in region of western pacific region-->
+            <!--heading-->
+            <p><a href='129256'>129256</a> Confirmed ( <a href='1661'>1661</a> )<br>
+            <a href='5598'> 5598</a> Deaths ( <a href='40'>40</a> )</p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Eastern Mediterranean Region</h3><!--virus cases in eastern mediterranean region-->
+            <!--heading-->
+            <p><a href='120683'>120683</a> Confirmed ( <a href='4859'>4859</a> )<br>
+            <a href='5784'> 5784</a> Deaths ( <a href='122'>122</a> )</p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>South-East Asia Region</h3><!--virus cases in south-eastern asia region-->
+            <!--heading-->
+            <p><a href='25291'>25291</a> Confirmed ( <a href='1731'>1731</a> )<br>
+            <a href='1134'>1134</a> Deaths ( <a href='83'>83</a> )</p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>African Region</h3><!--virus cases in african region -->
+            <!--heading-->
+            <p><a href='13104'>13104</a> Confirmed ( <a href='744'>744</a> )<br>
+            <a href='616'>616</a> Deaths ( <a href='30'>30</a> )</p>
+            <!--paragraph along with link tags-->   
+
+
+            <h3>USA</h3><!--virus cases in USA-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='7,408,066'> 7,408,066</a><br>
+               Deaths <strong>:</strong><a href="210,835"> 210,835</a><br>
+               Recovered <strong>:</strong><a href="4,649,827"> 4,649,827</a><br>
+               Active Cases <strong>:</strong><a href="2,547,404"> 2,547,404</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>India</h3><!--virus cases in india-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='6,233,700'> 6,233,700</a><br>
+               Deaths <strong>:</strong><a href="97,624"> 97,624</a><br>
+               Recovered <strong>:</strong><a href="5,192,917"> 5,192,917</a><br>
+               Active Cases <strong>:</strong><a href="943,159"> 943,159</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Brazil</h3><!--virus cases in Brazil-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='4,780,317'> 4,780,317</a><br>
+               Deaths <strong>:</strong><a href="143,010"> 143,010</a><br>
+               Recovered <strong>:</strong><a href="4,135,088"> 4,135,088</a><br>
+               Active Cases <strong>:</strong><a href="502,219"> 502,219</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Russia</h3><!--virus cases in Russia-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='1,176,286'> 1,176,286</a><br>
+               Deaths <strong>:</strong><a href="20,722"> 20,722</a><br>
+               Recovered <strong>:</strong><a href="958,257"> 958,257</a><br>
+               Active Cases <strong>:</strong><a href="197,307"> 197,307</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Colombia</h3><!--virus cases in Colombia-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='824,042'> 824,042</a><br>
+               Deaths <strong>:</strong><a href="25,828"> 25,828</a><br>
+               Recovered <strong>:</strong><a href="734,154"> 734,154</a><br>
+               Active Cases <strong>:</strong><a href="64,060"> 64,060</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Peru</h3><!--virus cases in Peru-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='811,768'> 811,768</a><br>
+               Deaths <strong>:</strong><a href="32,396"> 32,396</a><br>
+               Recovered <strong>:</strong><a href="676,925"> 676,925</a><br>
+               Active Cases <strong>:</strong><a href="102,447"> 102,447</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Spain</h3><!--virus cases in Spain-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='758,172'> 758,172</a><br>
+               Deaths <strong>:</strong><a href="31,614"> 31,614</a><br>
+               Recovered <strong>:</strong><a href="N/A"> N/A</a><br>
+               Active Cases <strong>:</strong><a href="N/A"> N/A</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Mexico</h3><!--virus cases in Mexico-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='738,163'> 738,163</a><br>
+               Deaths <strong>:</strong><a href="77,163"> 77,163</a><br>
+               Recovered <strong>:</strong><a href="530,945"> 530,945</a><br>
+               Active Cases <strong>:</strong><a href="130,055"> 130,055</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Argentina</h3><!--virus cases in Argentina-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='736,609'> 736,609</a><br>
+               Deaths <strong>:</strong><a href="16,519"> 16,519</a><br>
+               Recovered <strong>:</strong><a href="585,857"> 585,857</a><br>
+               Active Cases <strong>:</strong><a href="134,233"> 134,233</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>South Africa</h3><!--virus cases in South Africa-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='672,572'> 672,572</a><br>
+               Deaths <strong>:</strong><a href="16,667"> 16,667</a><br>
+               Recovered <strong>:</strong><a href="606,520"> 606,520</a><br>
+               Active Cases <strong>:</strong><a href="49,385"> 49,385</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>France</h3><!--virus cases in France-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='550,690'> 550,690</a><br>
+               Deaths <strong>:</strong><a href="31,893"> 31,893</a><br>
+               Recovered <strong>:</strong><a href="96,327"> 96,327</a><br>
+               Active Cases <strong>:</strong><a href="422,470"> 422,470</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Chile</h3><!--virus cases in Chile-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='461,300'> 461,300</a><br>
+               Deaths <strong>:</strong><a href="12,725"> 12,725</a><br>
+               Recovered <strong>:</strong><a href="434,794"> 434,794</a><br>
+               Active Cases <strong>:</strong><a href="13,781"> 13,781</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Iran</h3><!--virus cases in Iran-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='457,219'> 457,219</a><br>
+               Deaths <strong>:</strong><a href="26,169"> 26,169</a><br>
+               Recovered <strong>:</strong><a href="380,956"> 380,956</a><br>
+               Active Cases <strong>:</strong><a href="50,094"> 50,094</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>UK</h3><!--virus cases in UK-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='446,156'> 446,156</a><br>
+               Deaths <strong>:</strong><a href="42,072"> 42,072</a><br>
+               Recovered <strong>:</strong><a href="N/A"> N/A</a><br>
+               Active Cases <strong>:</strong><a href="N/A"> N/A</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Bangladesh</h3><!--virus cases in Bangladesh-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='363,479'> 363,479</a><br>
+               Deaths <strong>:</strong><a href="5,251"> 5,251</a><br>
+               Recovered <strong>:</strong><a href="275,487"> 275,487</a><br>
+               Active Cases <strong>:</strong><a href="82,741"> 82,741</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Iraq</h3><!--virus cases in Iraq-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='362,981'> 362,981</a><br>
+               Deaths <strong>:</strong><a href="9,181"> 9,181</a><br>
+               Recovered <strong>:</strong><a href="292,197"> 292,197</a><br>
+               Active Cases <strong>:</strong><a href="61,603"> 61,603</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Saudi Arabia</h3><!--virus cases in Saudi Arabia-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='334,605'> 334,605</a><br>
+               Deaths <strong>:</strong><a href="4,768"> 4,768</a><br>
+               Recovered <strong>:</strong><a href="319,154"> 319,154</a><br>
+               Active Cases <strong>:</strong><a href="10,683"> 10,683</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Turkey</h3><!--virus cases in Turkey-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='317,272'> 317,272</a><br>
+               Deaths <strong>:</strong><a href="8,130"> 8,130</a><br>
+               Recovered <strong>:</strong><a href="278,504"> 278,504</a><br>
+               Active Cases <strong>:</strong><a href="30,638"> 30,638</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Italy</h3><!--virus cases in Italy-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='313,011'> 313,011</a><br>
+               Deaths <strong>:</strong><a href="35,875"> 35,875</a><br>
+               Recovered <strong>:</strong><a href="226,506"> 226,506</a><br>
+               Active Cases <strong>:</strong><a href="50,630"> 50,630</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Pakistan</h3><!--virus cases in Pakistan-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='312,263'> 312,263</a><br>
+               Deaths <strong>:</strong><a href="6,479"> 6,479</a><br>
+               Recovered <strong>:</strong><a href="296,881"> 296,881</a><br>
+               Active Cases <strong>:</strong><a href="8,903"> 8,903</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Philippines</h3><!--virus cases in Philippines-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='311,694'> 311,694</a><br>
+               Deaths <strong>:</strong><a href="5,504"> 5,504</a><br>
+               Recovered <strong>:</strong><a href="253,488"> 253,488</a><br>
+               Active Cases <strong>:</strong><a href="52,702"> 52,702</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Germany</h3><!--virus cases in Germany-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='291,578'> 291,578</a><br>
+               Deaths <strong>:</strong><a href="9,559	"> 9,559</a><br>
+               Recovered <strong>:</strong><a href="256,000"> 256,000</a><br>
+               Active Cases <strong>:</strong><a href="26,019"> 26,019</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Indonesia</h3><!--virus cases in Indonesia-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='287,008'> 287,008</a><br>
+               Deaths <strong>:</strong><a href="10,740"> 10,740</a><br>
+               Recovered <strong>:</strong><a href="214,947"> 214,947</a><br>
+               Active Cases <strong>:</strong><a href="61,321"> 61,321</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+            <h3>Canada</h3><!--virus cases in Canada-->
+            <!--heading-->
+            <p>Total Cases <strong>:</strong><a href='175,559'> 175,559</a><br>
+               Deaths <strong>:</strong><a href="9,557"> 9,557</a><br>
+               Recovered <strong>:</strong><a href="147,508"> 147,508</a><br>
+               Active Cases <strong>:</strong><a href="18,494"> 18,494</a>
+            </p>
+            <!--paragraph along with link tags-->
+
+
+        <div class="button-group">
+        <div class="row">
+                    
+            <button  type="button" class="button1" onclick="otherCountries()"><span>Click!</span></button>
+
+        </div><!--row closing-->
+        
+            <p id="demo"></p>
+            
+        </div>
+
+            <a href="https://www.worldometers.info/coronavirus/">CoronaVirus Updates ( live )</a><!--acces to link-->
+
+
+        </div><!--left closing-->
+
+        <div class="middle">
+            <!-- this a main heading and its styling is done in css-->
+            <h2>What is Corona Virus ?</h2>
+            <!--second main heading but with small size h2 is smaller in size as compared to h1--> 
+            <P> * The virus is not a living organism, but a protein molecules (DNA) covered by a protective layer of lipid (FAT), which, when absorbed by the cells of the ocular, nascal or buccal mucosa, changes their genetic code. (mutation) and convert them into aggressor and multiplier cells.<br><br>
+            <!-- p stands for paragraph and there can be more then one paragraph in html-->
+            * Since the virus is not a living organism but a protein molecule, it is not killed, but decays on its own. The disintegration time depends on the temperature, humidity and type of material where it lies<br><br>
+
+            * <span style='color:red; font-weight: 500;'>NO BACTERICIDE SERVES</span>. The virus in not a living organism like bacteria; they cannot kill what is not Alive with anthobiotics, but quickly disintegrate its structure with everything said.</P>
+
+            <h2>How It Originated ?</h2>
+            <p>Genome analysis suggests two viruses may have combined.</p>
+
+
+        <div class="slideShow-Container">
+
+            <div class="row">
+                <div class="mySlides1">
+                <div class="numbertext">1 / 3</div>
+                <figure>
+                    <img src="image_Covid-19/pangolin.jpg" alt="panglin">
+                    <figcaption>
+                        In Feburary, scientists<!--<br>--> discovered a virus with 99% of<!--<br>--> genomic concordance to<!--<br>--> SAR-CoV-2 in Pangolins.<!--<br>-->
+                    </figcaption>
+                </figure>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mySlides1">
+                <div class="numbertext">2 / 3</div>
+                <figure>
+                    <img src="image_Covid-19/pangolins_2.jpg" alt="panglin">
+                    <figcaption>
+                        In Feburary, scientists<!--<br>--> discovered a virus with 99% of<!--<br>--> genomic concordance to<!--<br>--> SAR-CoV-2 in Pangolins.<!--<br>-->
+                    </figcaption>
+            </figure>
+
+                </div>
+            </div>
+
+            <div class="row">    
+                <div class="mySlides1">
+                <div class="numbertext">3 / 3</div>
+                <figure>
+                    <img src="image_Covid-19/pangolin-coronavirus.webp" alt="panglin">
+                    <figcaption>
+                        A coronavirus from the <span style='color:red'><strong>pangolin</strong></span> could be one of the sources for <span style='color:red'>COVID-19.</span>
+                    </figcaption>
+                </figure>
+
+                </div>
+            </div>
+
+<!--                <a class="prev" onclick="plusSlides(-1 , 0)">&#10094;</a>-->
+                    <a class="next" onclick="plusSlides(1 , 0)">&#10095;</a>
+
+        </div>
+        <br>
+
+    
+            <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1 , 0)"></span>
+            <span class="dot" onclick="currentSlide(2 , 0)"></span>
+            <span class="dot" onclick="currentSlide(3 , 0)"></span>
+            </div>
+    
+
+
+            <h3 style='background-color: white;color:red;padding:10px;'><!--padding provide space between text and border-->&nbsp;This article is Published in Collection with <br>&nbsp;The Conversation</h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;20 Mar 2020</p>
+            <h3 style=color:red>&nbsp;&nbsp;&nbsp;Alexandre Hassanin<br><h3>&nbsp;&nbsp;&nbsp;Maitre de Conferences (HDR) , Sorbonne Universite</h3></h3><hr>
+
+            <ul type='disk'>
+                <li>Scientists have been trying to understand the origin of COVID-19 and the virus that causes it: SARS-CoV-2.</li>
+                <li>Originally, scientists believed the virus may have developed in bats, and later pangolins.</li>
+                <li>However, genomic comparisons suggest that the SARS-Cov-2 virus is the result of a recombination between<br> two different viruses, meaning the exact origin of the virus is still unclear.</li>
+                <!--unordered list defines list items and by default its type is disk and li represent the list item... we can change the disk to other type if we want like circle etc.-->
+            </ul><!--ul closing-->
+
+            <p>In the space of a few weeks, we have all learned a lot about COVID-19 and the virus that causes it: SARS-CoV-2. But there have also been a lot of rumours. And while the number of scientific articles on this virus is increasing, there are still many grey areas as to its origins.</p>
+
+            <h3>Have You read ?</h3><hr>
+            <!--creating access to link -->
+
+                <a href="https://www.weforum.org/agenda/2020/03/coronavirus-testing-country-comparison"> How different countries are Approaching coronavirus testing.</a><!--access to link-->
+
+            <!-- a tag is used for getting a link and when we are using a tag using href is very important it defines the page's location-->
+            <hr><!--allows line break and there is one horizontal line as well-->
+
+            <p>In which animal species did it occur? A bat, a pangolin or another wild species? Where does it come from? From a cave or a forest in the Chinese province of Hubei, or elsewhere?<br><br>In December 2019, 27 of the first 41 people hospitalised (66%) passed through a market located in the heart of Wuhan city in Hubei province. But, according to a 
+
+                <a href='https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext#%20'> study conducted at Wuhan Hospital</a>, <!--access to link-->
+
+            the very first human case identified did not frequent this market. Instead, 
+
+                <a href='https://onlinelibrary.wiley.com/doi/full/10.1002/jmv.25731'>a molecular dating estimate based on the SARS-CoV-2 genomic sequences</a> <!--access to link-->
+
+            indicates an origin in November. This raises questions about the link between this COVID-19 epidemic and wildlife.
+            </p><!--here there is another paragraph...we can put as much paragraph as we want and take a notice there is 'a' element inside of 'p' element which will be  a child element...-->
+
+            <h2>Genomic data</h2>
+            <!--heading-->
+            <p>The 
+
+                <a href='https://www.nature.com/articles/s41586-020-2008-3'> SARS-CoV-2 genome</a><!--access to link-->
+
+            was rapidly sequenced by Chinese researchers. It is an 
+
+                <a href='https://www.britannica.com/science/RNA'>RNA</a><!--access to link-->
+
+            molecule of about 30,000 bases containing 15 genes, including the S gene which codes for a protein located on the surface of the viral envelope (for comparison, our genome is in the form of a double helix of DNA about 3 billion bases in size and contains about 30,000 genes).</p>
+
+            <!--another paragraph-->
+
+            <p>Comparative 
+
+                <a href='https://www.nature.com/articles/s41586-020-2008-3'>genomic analyses</a><!--access to link-->
+
+            have shown that SARS-CoV-2 belongs to the group of Betacoronaviruses and that it is very close to 
+
+                <a href='https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome'>SARS-CoV</a><!--acess to link-->
+
+            , responsible for an epidemic of acute pneumonia which appeared in November 2002 in the Chinese province of Guangdong and then spread to 29 countries in 2003. A total of 8,098 cases were recorded, including 774 deaths. It is known that bats of the genus Rhinolophus (potentially several cave species) were the 
+
+                <a href='https://science.sciencemag.org/content/310/5748/676.pdf-extract'>reservoir of this virus</a><!--access to link-->
+
+            and that a small carnivore, the palm civet (Paguma larvata), may have served as an 
+
+                <a href='https://www.nature.com/articles/nm.3985'> intermediate host</a><!--access to link-->
+
+            between bats and the first human cases.</p>
+
+            <!--paragraph-->
+
+            <p>Since then, many Betacoronaviruses have been discovered, mainly in bats, but also in humans. For example, RaTG13, isolated from a bat of the species Rhinolophus affinis collected in China’s Yunan Province, has recently been described as very similar to SARS-CoV-2, with 
+
+                <a href ='https://www.nature.com/articles/s41586-020-2012-7'>genome sequences identical to 96%.</a><!--access to link-->
+
+            These results indicate that bats, and in particular species of the genus Rhinolophus, constitute the reservoir of the SARS-CoV and SARS-CoV-2 viruses.</p>
+
+        <div class="slideShow-Container">
+
+            <div class="row">
+                <div class="mySlides2">
+                <div class="numbertext">1 / 3</div>
+                    <figure>
+                        <img src="image_Covid-19/bat.jpg" alt="bat">
+                        <figcaption> Bats (Rhinolophus affinis) were originally thought to be the source of virus.</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mySlides2">
+                <div class="numbertext">2 / 3</div>
+                    <figure>
+                        <img src="image_Covid-19/bat2.jpg" alt="bat">
+                        <figcaption> Bats (Rhinolophus affinis) were originally thought to be the source of virus.</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+
+            <div class="row">    
+                <div class="mySlides2">
+                <div class="numbertext">3 / 3</div>
+                    <figure>
+                        <img src="image_Covid-19/bat3.jpg" alt="bat">
+                        <figcaption> Bats (Rhinolophus affinis) were originally thought to be the source of virus.</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+
+           
+<!--                <a class="prev" onclick="plusSlides(-1 ,1)">&#10094;</a>-->
+                <a class="next" onclick="plusSlides(1 , 1)">&#10095;</a>
+          
+
+        </div>
+        <br>
+
+    
+            <div style="text-align: center">
+            <span class="dot2" onclick="currentSlide(1 , 1)"></span>
+            <span class="dot2" onclick="currentSlide(2 , 1)"></span>
+            <span class="dot2" onclick="currentSlide(3 , 1)"></span>
+            </div>
+    
+
+
+            <!--paragraph-->
+            <p>But how do you define a reservoir? A reservoir is one or several animal species that are not or not very sensitive to the virus, which will naturally host one or several viruses. The absence of symptoms of the disease is explained by the effectiveness of their immune system, which allows them to fight against too much viral proliferation.</p>
+
+            <h2>Recombination mechanism</h2>
+            <!--heading-->
+            <p>On February 7, 2020, we learned that a virus even closer to SARS-CoV-2 had been discovered in pangolin. With 99% of 
+
+                <a href='https://www.nature.com/articles/d41586-020-00364-2'> genomic concordance reported</a><!--access to link-->
+
+            , this suggested a more likely reservoir than bats. However, a 
+
+                <a href='https://www.biorxiv.org/content/10.1101/2020.02.17.951335v1'> recent study under review</a><!--access to link-->
+
+            <!--paragraph-->    
+            shows that the genome of the coronavirus isolated from the Malaysian pangolin (Manis javanica) is less similar to SARS-Cov-2, with only 90% of genomic concordance. This would indicate that the virus isolated in the pangolin is not responsible for the COVID-19 epidemic currently raging.</p>
+            <!--paragraph-->
+            <p>However, the coronavirus isolated from pangolin is similar at 99% in a specific region of the S protein, which corresponds to the 74 amino acids involved in the ACE (Angiotensin Converting Enzyme 2) receptor binding domain, the one that allows the virus to enter human cells to infect them. By contrast, the virus RaTG13 isolated from bat R. affinis is highly divergent in this specific region (only 77 % of similarity). This means that the coronavirus isolated from pangolin is capable of entering human cells whereas the one isolated from bat R. affinis is not.</p>
+            <!--paragraph-->
+            <p>In addition, these genomic comparisons suggest that the SARS-Cov-2 virus is the result of a recombination between two different viruses, one close to RaTG13 and the other closer to the pangolin virus. In other words, it is a chimera between two pre-existing viruses.</p>
+
+
+            <div class="row"><!--for clearing the row after image , so next say paragraph will start from new line-->
+                <figure>
+                    <img src="image_Covid-19/pangolin-coronavirus.webp" alt="pangolin"><!--height:200; width:300;--><!--image of pangolin-->
+                    <figcaption>A coronavirus from the <span style='color:red'>pangolin</span> could be one of the sources for <span style='color:red'>COVID-19.</span></figcaption><!--figcaption closing-->
+                </figure><!--figure closing-->
+            </div><!--row closing-->
+
+
+            <!--paragraph with 'a' element-->
+            <p>This recombination mechanism had 
+
+                <a href='https://jvi.asm.org/content/84/7/3134'>already been described</a><!--access to link-->
+
+            in coronaviruses, in particular to explain the origin of SARS-CoV. It is important to know that recombination results in a new virus potentially capable of infecting a new host species. For recombination to occur, the two divergent viruses must have infected the same organism simultaneously.</p>
+
+            <!--paragraph-->
+            <P>Two questions remain unanswered: in which organism did this recombination occur? (a bat, a pangolin or another species?) And above all, under what conditions did this recombination take place?</P>
+
+            <h3 >WHO RISK ASSESSMENT</h3>
+            <!--heading-->
+            <p>Global level very high.</p>
+            <!--heading-->
+            <h3>Novel CoronaVirus <span style="color: red">(COVID-19)</span> Situation dashboard</h3>
+            <!--heading-->
+            <p>This interactive dashboard/map provides the latest global numbers and numbers by country of <span style="color: red">COVID-19</span> cases on a daily basis.<br><br> 
+
+                <a href='https://covid19.who.int'>covid19.who.int</a><!--access to link-->
+
+            </p>
+            <!--paragraph along with link element-->
+            <h3 >For country numbers, find the latest situation reports here :</h3> 
+
+                <a href='https://www.who.int/emergencies/disease/novel-coronavirus-2019/situation-reports'>https://www.who.int/emergencies/disease/novel-CoronaVirus-2019/situation-reports</a>.<!--access to link-->
+
+            <h2 class = 'different'><span style='color:red'>Covid 19</span> Myth-Busters &#128721;</h2>
+            <!--heading using class to get different styling-->
+            <p> There is a lot of false information around. These are the facts.<br></p>
+            <ul type='disk'><!--unordered list of type disk-->    
+                
+                <li>&#128290; People of all ages Can be <span style='color:red'>Infected</span> by the CoronaVirus. Older people , and people with pre-existing medical conditions<br> ( such as asthma, diabetes, heart Disease) appear to be more vulnerable to becoming severely ill with the virus.</li><br>
+                <!--list item 1-->
+                <li>&#10052; Cold wearther and snow <del>CANNOT</del> kill the CoronaVirus.</li><br>
+                <!--list item 2-->
+                <li>&#127774; The CoronaVirus Can be transmitted in areas with hot and humid climates.</li><br>
+                <!--list item 3-->
+                <li>&#128028; The CoronaVirus <del>Cannot</del> be transmitted through mosquito bites.</li><br>
+                <!--list item 4-->
+                <li>&#128054; There is NO Evidence that companion animals/pets such as dogs or cats can transmit the CoronaVirus. </li><br>
+                <!--list item 5-->
+                <li>&#128704; Taking a hot bath <del>Does Not</del> Prevent The CoronaVirus.</li><br>
+                <!--list item 6-->
+                <li>Hand dryers <del>are not</del> effective in killing the CoronaVirus</li><br>
+                <!--list item 7-->
+                <li>Ultraviolet light <del>should not</del> be used for sterilization and can cause skin irritation.</li><br>
+                <!--list item 8-->
+                <li> &#127777; Thermal scanner Can detect if people have a fever but <del>Cannot</del> detect whether or not someone has the CoronaVirus.</li><br>
+                <!--list item 9-->
+                <li> &#128166; Spraying alcohol or chlorine all over your body <del>will not</del> kill viruses that have already entered your body.</li><br>
+                <!--list item 10-->
+                <Li> &#128137; Vaccine against <strong>pneumonia</strong>. such as<strong> pneumococcal Vaccine</strong> and<strong> Haemophilus influenzae type b (hib) Vaccine</strong>, <del>do not</del> provide protection against the CoronaVirus.</Li><br>
+                <!--list item 11 along with strong attribute-->
+                <li>There is <del>No</del> Evidence that regularly rinsing the nose with saline has protected people from infection with the CoronaVirus.</li><br>
+                <!--list item 12 with del attribute-->
+                <li>Garlic is healthy but there is <del>NO</del> evidence from the current outbreak that eating garlic has protected people from the CoronaVirus.</li><br><!--list item 13-->
+                <li>Antibiotics <del>Do NOT</del> work against viruses, antibiotics only work against bacteria.</li><br>
+                <!--list item 14-->
+                <li>To Date, there is <del>NO</del> specific medicine recommended to prevent or treat the CoronaVirus.</li><br>
+
+            </ul><hr><hr>
+
+            <div id="formContainer">
+                <div id="error"></div>
+                    <form id="form2" action="/action_page.php" target="_blank" method="post">
+                    <!--form element creates a form in webpages where user can submit anything...target _blank indicates that the page will open in new page...method choosen is post which we usually use to send some private data and sensitive data...unlike get, post private info is not attached to url...--><h2>Subscribe For Updates</h2>
+                    A weekly update of what's on the Global Agenda<br><br>
+                <div class="row">
+                    <div class="col25">
+                        <label for="email" >Email-ID</label>    
+                    </div>
+                <div class="col75">
+                        <input type="email" id='email' name="email" placeholder="Email" autocomplete="off" style="width: 100%; padding: 10px;" required validate ><!--input type email will display a textfeild which accepts email and required attribute specifies that it is necessary ... validate states that the email should be valid-->
+                    </div>
+                </div>
+                        
+                        <input type='button' value='Subscribe'  style="margin-top: 10px;" onclick='ReplaceForn()'> <!--submit creates a button in form which will be send to action's value-->
+                        <input type="reset" style="margin-top: 10px;"><!--it creates a button by clicking it all data will be reset-->
+
+                </form>
+
+                </div>
+
+                <div id="forReplacement"></div>
+
+
+    </div><!--middle closing-->
+
+
+
+    <div class="right" onclick="precautions()">
+
+            <h2>Precautions</h2>
+            <!--heading using class attributes-->
+
+            <!--unordered lidt of type disc-->
+            <ul type='disc'>
+
+                <li>The virus is very fragile, the only thing that protects it is a thin outer layer of fat. That is why any soap or detergent is the best remedy, because the foam CUTS the FAT(that is why you have to rub so much: for 20 seconds or more, to make a lot of foam). By dissolving the fat layer,the protein molecules disperses and breaks down on its own.</li><br>
+
+                <!--list item 1 and type will be disc that's choosen-->
+
+                <li>HEAT melts fat, this is why it is so good to use water above 25 degrees celsius for washing hands, clothes and everything. In addition, hot water makes more foam and that makes it even more useful.</li><br>
+
+                <!--list item 2-->
+
+                <li>Alcohol or any mixture with alcohol over 65% dissolves any FAT, especially the external lipid layer of the virus.</li><br>
+
+                <!--list item 3-->
+
+                <li>Any mix with 1 part bleach and 5 parts water directly dissolves the protein, breaks it down from the inside.</li><br>
+
+                <!--list item 4-->
+
+                <li>Oxygenated water helps long after soap, alcohol and chlorine, because peroxide dissolves the virus protein, but you have to use it pure and it hurts your skin.</li><br>
+
+                <!--list item 5-->
+
+                <li><span style='color:red'>NEVER</span> shake used or unused clothing, sheets or cloth. While it is glued to a porous surface, it is very inert and disintegrates only between 3 hours(fabrics and porous), 4 hours(copper, because it is naturally antiseptic, and wood , because it removes all the moisture and does not let it peel off and disintegrates). 24 hours (cardboard), 42 hours (metal) and 72 hours (plastic). but if you shake it or use a feather duster, the virus molecules float in the air for upto 3 hours, and can lodge in your nose.</li><br>
+
+                <!--list item 6-->
+
+                <li>The virus molecules remain very stable in external cold, or artificial as air conditioner in houses and cars. They also need moisture to stay stable, and especially darkness. Therefore, dehumidified, dry, warm and bright environments will degrade it faster.</li><br>
+
+                <!--list item 7-->
+
+                <li>UV LIGHT on any object that may contain it breaks down the virus protein. for example, to disinfect and reuse a mask is perfect. be careful, it also breaks down collagen (which is protein) in the skin, eventually causing wrinkles and skin cancer.</li><br>
+
+                <!--list item 8-->
+
+                <li><span style='color:coral'>The virus cannot go through healthy skin.</span></li><br>
+
+                <!--list item 9-->
+
+                <li>Vinegar is<span style='color:coral'> not useful</span> because it does not break down the protective layer of fat. </li><br>
+
+                <!--list item 10-->
+
+                <li><span style='color:coral'>NO</span> spirits,<span style='color:coral'> NOR </span>VODKA, serve. the strongest vodka is 40% alcohol, and you need 65%.</li><br>
+
+                <!--list item 11-->
+
+                <li>LISTERINE IF IT SERVES! It is 65% alcohol.</li><br>
+
+                <!--list item 12-->
+
+                <li>The more confined the space, the more concentration of the virus there can be. The more open or naturally ventilated, the less.</li><br>
+
+                <!--list item 13-->
+
+                <li>This is super said, <span style='color:coral'>but you have to wash your hands before and after touching mucosa, food, locks, Knobs, switches, remote control, cell phone, watches, computers, desks, TV, etc.</span> And when <span style='color:coral'>using the bathroom.</span></li><br>
+
+                <!--list item 14-->
+
+                <li>You have to HUMIDIFY HANDS DRY from so much washing them, because the molecules can hide in the micro cracks. The thicker the moisturizer, the better.</li><br>
+
+                <!--list item 15-->
+
+                <li>Also keep your <span style='color:coral'>NAILS SHORT</span> so that the virus does not hide there.</li><br>
+
+                <!--list item 16-->
+
+                <li>wash your hands frequently.</li><br>
+
+                <!--list item 17-->
+
+                <li>&#128069; avoid touching your eyes, mouth, and nose.</li><br>
+
+                <!--list item 18-->
+
+                <li>Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze.</li><br>
+
+                <!--list item 19-->
+
+                <li>&#128695; Avoid crowded places.</li><br>
+
+                <!--list item 20-->
+
+                <li>&#127968; Stay at home if you feel unwell even with a slight fever and cough.</li><br>
+
+                <!--list item 21-->
+
+                <li>&#128567; If you have fever ,cough and dificulty breathing, seek medical care early - but call by phone first.</li><br>
+
+                <!--list item 22-->
+
+                <li>Maintain at least 1 metre (3 feet) distance between yourself and others. Why? When someone coughs, sneezes, or speaks they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person has the disease.</li><br>
+
+                <!--list item 23-->
+
+                <li>Avoid going to crowded places. Why? Where people come together in crowds, you are more likely to come into close contact with someone that has COVID-19 and it is more difficult to maintain physical distance of 1 metre (3 feet).</li><br>
+
+                <!--list item 24-->
+
+                <li>Avoid touching eyes, nose and mouth. Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and infect you.</li><br>
+
+                <!--list item 25-->
+
+                <li>If you have a fever, cough and difficulty breathing, seek medical attention, but call by telephone in advance if possible and follow the directions of your local health authority. Why? National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections.</li><br>
+
+                <!--list item 26-->
+
+                <li>Governments should encourage the general public to wear a fabric mask if there is widespread community transmission, and especially where physical distancing cannot be maintained. Why? Masks are a key tool in a comprehensive approach to the fight against COVID-19. For more public advice on masks, read WHO (World Health Organisation)<a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-on-covid-19-and-masks'> Q&A </a>and watch Their<a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks'> videos </a>.</li><br>
+
+                <!--list item 27-->
+
+                <li>Avoid touching your eyes, mouth and nose immediately after using an alcohol-based hand sanitizer, as it can cause irritation.</li><br>
+
+                <!--list item 28-->
+
+                <li>Remember that washing your hands with soap and water is also effective against<br> COVID-19.</li><br>
+
+                <!--list item 29-->
+
+                <li>Boost your immunity by healthy lifestyle such as eating healthy food, practicing physical activity and getting enough sleep.</li><br>
+
+                <!--list item 30-->
+
+                <li>Avoid close contact with anyone showing signs of respiratory illness.</li><br>
+
+                <!--list item 31-->
+
+
+            </ul>   
+
+        </div><!--right closing-->
+
+        <div class="footer">
+
+            <address>
+
+                <strong>License and Republishing</strong><br><br>
+
+                World Economic Forum articles may be republished in accordance with our 
+
+                <a href='https://www.weforum.org/about/privacy-and-terms-of-use'> Terms of Use</a><!--access to link-->.<br><br>
+
+                <strong>Written by OMER</strong><br><br>
+
+                This article is published in collaboration with
+
+                <a href='https://theconversation.com/coronavirus-origins-genome-analysis-suggests-two-viruses-may-have-combined-134059'> The Conversation</a><!--access to link-->
+
+                .<br>The views expressed in this article are those of the author alone and not the World Economic Forum.
+
+            </address>
+
+        </div><!--footer closing-->
+
+    </div> 
+    
+    <script>
+    
+        //multiple image slider
+        var slideindex =[1,1]; 
+        var slideId = ["mySlides1", "mySlides2"];
+        var dotID = ["dot","dot2"];
+        showSlides(1,0);
+        showSlides(1,1);
+
+        //var plus = document.getElementsByClassName("next");
+        //plus.addEventListener('load', plusSlides);
+
+        function plusSlides(n , no){
+
+            showSlides(slideindex[no]+= n , no);
+
+        }
+
+
+        function currentSlide(n , no){
+            showSlides(slideindex[no] = n , no);
+        }
+
+        function showSlides(n , no){
+            var i;
+            var x= document.getElementsByClassName(slideId[no]);
+            var y = document.getElementsByClassName(dotID[no]);
+            if(n > x.length){slideindex[no] = 1} //when clicking next button and current image is 3 ,  image slider disappear . in order, to avoid that we wrote this line of code 
+            if(n < 1){slideindex[no] = x.length} //when clicking previous button and current image is 1 ,  image slider disappear . in order, to avoid that we wrote this line of code 
+    
+            for(i=0 ; i < x.length ; i++){
+                x[i].style.display = "none";
+            }
+    
+            for(i=0; i < y.length ; i++){
+                y[i].className = y[i].className.replace(" active", "");
+            }
+            
+            x[slideindex[no]-1].style.display = "block";
+            y[slideindex[no]-1].className += " active";
+        }
+    
+    </script>
+
+</body>
+</html>

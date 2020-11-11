@@ -1,0 +1,505 @@
+*{
+    box-sizing: border-box; 
+    
+/*
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+*/
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    grid-area: header;
+    background-color: #f1f1f1;
+/*    padding: 30px;*/
+    text-align: center;
+    font-family: cursive;
+}
+
+.header h1{
+    font-size: 70px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat (auto-fit , minmax(115px , 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 2px;
+    grid-template-areas: 
+        "header header header header header header"
+        "navigation navigation navigation navigation navigation navigation"
+        "left middle middle middle middle right"
+        "footer footer footer footer footer footer";
+}
+
+a{
+    text-decoration: none;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left,
+.middle,
+.right {
+    padding: 10px;
+    height: auto;
+}
+
+.left {
+    grid-area: left;
+}
+
+.navBar{
+    overflow: hidden;
+    background-color: #333;
+    grid-area: navigation;
+}
+
+.navBar a{
+    text-align: center;
+    text-decoration: none;
+    color: #f2f2f2;
+    display: block;
+    padding: 14px 16px;
+    text-transform: uppercase;
+    float: left;
+    font-size: 35px;
+    font-family: 'Rubik', sans-serif;
+    width: 20%;
+}
+
+.navBar a:first-child{
+    color: #4458dc;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+
+.navBar a:hover{
+    background-color: #ddd;
+    color: black;
+} 
+
+img{
+    object-fit: contain;
+    height: 200px;
+    width: 300px;
+    vertical-align: middle;
+}
+ 
+#slideImage{
+    width: 1330px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.slideShow-Container1 {
+/*    max-width: 1100px; */
+    position: relative;
+    margin: auto; 
+}
+
+figure{
+    float: left; /*important other all are for decoration */
+    width: 65%;  /*important other all are for decoration */
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    text-indent: 0;
+    font-size: smaller;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+figcaption{
+    padding: 0.5em;
+}
+/*
+
+div.gallery{
+    border: 1px solid #777;
+}
+
+div.gallery:hover{
+    border: 1px solid #ccc;
+}
+
+div.gallery img{
+    height: auto;
+    width: 100px;
+    object-fit: contain;
+}
+
+div.disc{
+    text-align: center;
+    padding: 15px;
+    font-family: cursive;
+}
+
+.responsive {
+	
+	width: 39.99999%;
+	padding: 0 6px;
+	float:left;
+	
+}
+*/
+
+.middle{
+    grid-area: middle;  
+/*    grid-auto-flow: row;*/
+}
+
+.right {
+    grid-area: right;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    grid-area: footer;
+    padding: 10px;
+}
+
+/* styling for image slider */
+.mySlides1 , .mySlides2{
+    display: none;
+}
+
+.slideShow-Container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev , .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*
+.prev:hover , .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+*/
+h3,
+h2,
+strong{
+    font-family: 'Rubik', sans-serif;
+}
+
+p,
+li,
+span,
+a,
+address{
+    font-family: 'Dosis', sans-serif;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+}
+
+.numbertext {
+    color: black;
+    background-color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot , .dot2{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin:  0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active{
+    background-color: #717171;
+}
+
+ /*fading animation */ 
+.fade {
+   -webkit-animation-name : fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name : fade;
+   animation-duration : 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+@media only screen and (max-width: 300px){
+    .prev, .next , .text{
+        font-size: 11px;
+    }
+}
+
+/* styling for button */
+.button-group .button1 {
+    background-color: white;
+    border: none;
+    color: black;
+    padding:  8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid black;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float: left;
+}
+
+.button1:hover{
+    background-color: black;
+    color: white;
+}
+
+.button-group .button1 :not(:last-child){
+    border-right: none ;   /* to avoid border collapse */ 
+}
+
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20x;
+    transition: 0.5s;
+}
+
+.button1:hover span{
+    padding-right: 25px;
+}
+
+.button1:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+/* styling for form */
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=button] , input[type=reset]{
+    background-color: lightseagreen;
+    color: white;
+    width: 48%;
+    margin: 5px;
+    padding: 12px 20px;
+    border: none;
+    border-radius:  4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=button]:hover , input[type=reset]:hover{
+    background-color: lightslategray;
+    color: white;
+}
+
+#formContainer #error{
+    margin-bottom: 20px;
+    padding: 0px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+#formContainer,
+#forReplacement{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 15px;
+    color: darkslategrey;
+    height: 130px;
+    
+}
+
+.col75 {
+    width: 75%;
+    float: left;
+    margin-top: 6px;
+}
+
+.col25 {
+    width: 25%;
+    float: left;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 600px){
+    .col25{
+        width: 100%;
+        margin-top: 6px;
+    }
+    
+    .col75 , input[type=button]{
+        width: 100%;
+        margin-top: 6px;
+    }
+    
+    .col75 , input[type=reset]{
+        width: 100%;
+        margin-top: 6px;
+    }
+    
+    .text{
+        font-size: 20px;
+    }
+    
+    #formContainer,
+    #forReplacement{
+        height: 150px;
+    }
+}
+
+/* blackberry playbook */
+@media screen and (max-width: 600px){
+    .grid-container{
+        grid-template-areas: 
+            "header header header header header header"
+            "navigation navigation navigation navigation navigation navigation" 
+            "left left left left left left"
+            "middle middle middle middle middle middle"
+            "right right right right right right"
+            "footer footer footer footer footer footer";
+    }
+    
+    .navBar a{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    
+    img{
+        width: 250px;
+        height: 170px;
+        object-fit: contain;
+    }
+    
+    #slideImage{
+    width: 618px;
+    height: 200px;
+    object-fit: cover;
+     
+    }
+    
+    #formContainer,
+    #forReplacement{
+        height: 270px;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .left,
+    .middle, 
+    .right{
+        font-size: 30px;
+    }
+    
+    #formContainer,
+    #forReplacement{
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #formContainer,
+    #forReplacement{
+        height: 270px;
+    }
+    .slideShow-Container1{
+        width: 100%;
+    }
+    
+    .navBar a{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    
+    img{
+        width: 230px;
+        height: 175px;
+        object-fit: contain;
+    }
+    
+    #slideImage{
+    width: 618px;
+    height: 200px;
+    object-fit: cover;
+    
+    }
+    
+}
+
+@media screen and (width: 1440px){
+    #slideImage{
+    width: 1406px;
+    height: 300px;
+    object-fit: cover;
+    
+    }
+}
+
+
